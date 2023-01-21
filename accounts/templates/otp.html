@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>otp</title>
+</head>
+<body>
+    <h3>OTP verify</h3>
+    <form method='POST'>
+        {% csrf_token %} 
+        <label for="phone">Mobile</label>
+        <input type="number" name='phone'>
+        <label for="otp">Otp</label>
+        <input type="number" name='otp'>
+        <button type='Submit'>Submint</button>
+    </form>
+</body>
+</html>
